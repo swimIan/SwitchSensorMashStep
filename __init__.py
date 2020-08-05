@@ -59,4 +59,4 @@ class SwitchSensorMashStep(StepBase):
         # Check if timer finished and go to next step
         if self.is_timer_finished() == True:
             self.notify("Mash Step Completed!", "Starting the next step", timeout=None)
-            self.next()
+            next(self)
